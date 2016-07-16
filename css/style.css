@@ -1,0 +1,80 @@
+body {
+    background-color: #e0e0e0;
+    min-width: 440px !important;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 110px;
+}
+
+.navbar {
+    background-color: white;
+    margin-bottom: 0px;
+    box-shadow: 0px 4px 6px #6441a4;
+}
+
+.list-group {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.display-name {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.label {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+#brand {
+    font-weight: 700;
+    color: #6441a4;
+}
+
+#made-with {
+    font-weight: 400;
+}
+
+.fa-heart {
+    color: #f03030
+}
+
+/* Image opacity on hover */
+.hover img {
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover img:hover {
+	opacity: .5;
+}
+
+/* ======== PACE ========== */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace-inactive {
+  display: none;
+}
+
+.pace .pace-progress {
+  background: #8844ee;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
