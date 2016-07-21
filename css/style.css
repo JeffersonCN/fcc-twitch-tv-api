@@ -1,8 +1,7 @@
 body {
     background-color: #e0e0e0;
-    min-width: 440px !important;
+    min-width: 320px !important;
     font-family: 'Roboto', sans-serif;
-    padding-top: 110px;
 }
 
 .navbar {
@@ -17,64 +16,214 @@ body {
 }
 
 .logo {
-    width: 50px;
-    height: 50px;
     margin-right: 10px;
 }
 
 .display-name {
-    font-size: 18px;
     font-weight: 600;
-}
-
-.label {
-    font-weight: 300;
-    font-size: 14px;
 }
 
 #brand {
     font-weight: 700;
     color: #6441a4;
+    margin-bottom: 0px;
 }
 
 #made-with {
     font-weight: 400;
+    margin-bottom: 3px;
 }
 
 .fa-heart {
     color: #f03030
 }
 
+
 /* Image opacity on hover */
+
 .hover img {
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
 }
+
 .hover img:hover {
-	opacity: .5;
+    opacity: .5;
 }
+
+
+/* -------- Responsive ----- */
+
+.label {
+    font-weight: 300;
+}
+
+
+/* xs */
+
+@media only screen and (min-device-width: 0px) {
+    body {
+        padding-top: 125px;
+    }
+    #brand {
+        font-size: 50px;
+    }
+    #made-with {
+        font-size: 24px;
+    }
+    .logo {
+        max-width: 110px;
+        max-height: 110px;
+    }
+    .display-name {
+        font-size: 30px;
+    }
+    .label {
+        font-size: 24px;
+    }
+    .activity {
+        font-size: 18px;
+        visibility: visible;
+    }
+}
+
+
+/* sm */
+
+@media only screen and (min-device-width: 544px) {
+    body {
+        padding-top: 125px;
+    }
+    #brand {
+        font-size: 50px;
+    }
+    #made-with {
+        font-size: 24px;
+    }
+    .logo {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .display-name {
+        font-size: 30px;
+    }
+    .label {
+        font-size: 22px;
+    }
+    .activity {
+        font-size: 24px;
+        visibility: visible;
+    }
+}
+
+
+/* md */
+
+@media only screen and (min-device-width: 768px) {
+    body {
+        padding-top: 115px;
+    }
+    #brand {
+        font-size: 40px;
+    }
+    #made-with {
+        font-size: 18px;
+    }
+    .logo {
+        max-width: 110px;
+        max-height: 110px;
+    }
+    .display-name {
+        font-size: 30px;
+    }
+    .label {
+        font-size: 22px;
+    }
+    .activity {
+        font-size: 24px;
+        visibility: visible;
+    }
+}
+
+
+/* lg */
+
+@media only screen and (min-device-width: 992px) {
+    body {
+        padding-top: 115px;
+    }
+    #brand {
+        font-size: 40px;
+    }
+    #made-with {
+        font-size: 18px;
+    }
+    .logo {
+        max-width: 110px;
+        max-height: 110px;
+    }
+    .display-name {
+        font-size: 26px;
+    }
+    .label {
+        font-size: 22px;
+    }
+    .activity {
+        font-size: 24px;
+        visibility: visible;
+    }
+}
+
+
+/* xl */
+
+@media only screen and (min-device-width: 1200px) {
+    body {
+        padding-top: 115px;
+    }
+    #brand {
+        font-size: 40px;
+    }
+    #made-with {
+        font-size: 18px;
+    }
+    .logo {
+        max-width: 110px;
+        max-height: 110px;
+    }
+    .display-name {
+        font-size: 26px;
+    }
+    .label {
+        font-size: 22px;
+    }
+    .activity {
+        font-size: 24px;
+        visibility: visible;
+    }
+}
+
 
 /* ======== PACE ========== */
-.pace {
-  -webkit-pointer-events: none;
-  pointer-events: none;
 
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
 
 .pace-inactive {
-  display: none;
+    display: none;
 }
 
 .pace .pace-progress {
-  background: #8844ee;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  right: 100%;
-  width: 100%;
-  height: 2px;
+    background: #8844ee;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
 }

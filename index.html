@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>FreeCodeCamp - Twitch Streams</title>
-        <meta charset="UTF-8">
-        <!-- Import Roboto Font-->
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-        <!-- Import Font Awesome-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-        <!-- Import Bootstrap 4 CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-        <!-- Import custom styles-->
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- Navbar -->
-        <nav class="navbar navbar-fixed-top navbar-light twitch-color">
-            <h1 id="brand" class="text-xs-center"><i class="fa fa-twitch"></i> Twitch Streams</h1>
-            <h6 id="made-with" class="text-xs-center">
+
+<head>
+    <title>FreeCodeCamp - Twitch Streams</title>
+    <meta charset="UTF-8">
+    <!-- Import Roboto Font-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <!-- Import Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <!-- Import Bootstrap 4 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <!-- Import custom styles-->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-fixed-top navbar-light twitch-color">
+        <h1 id="brand" class="text-xs-center"><i class="fa fa-twitch"></i> Twitch Streams</h1>
+        <p id="made-with" class="text-xs-center">
                 Made with <i class="fa fa-heart"></i> by <a href="https://jeffersoncn.github.com/" target="_blank">jeffersoncn</a>
-            </h6>
-        </nav>
+            </p>
+    </nav>
 
-        <!-- Content container-->
-        <div class="container">
-            <div class="row">
-                <!-- Responsive content using GRID -->
-                <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-10 col-md-offset-1 col-lg-8 col-lg-offset-2 col-xl-6 col-xl-offset-3">
-                    <!-- List group to receive the channels information -->
-                    <div class="list-group" id="channel-list"></div>
-                </div>
-            </div>
+    <!-- Content container-->
+    <div class="container-fluid">
+        <!-- Responsive content using GRID -->
+        <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-10 col-lg-offset-1 col-xl-8 col-xl-offset-2">
+            <!-- List group to receive the channels information -->
+            <div class="list-group" id="channel-list"></div>
         </div>
+    </div>
 
-        <!-- Import jQuery -->
+    <!-- Import jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <!-- Import Bootstrap 4 -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-        <!-- Import Axios -->
-        <script src="https://npmcdn.com/axios/dist/axios.min.js" type="text/javascript"></script>
-        <!-- Import Pace.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js" type="text/javascript"></script>
-        <!-- Import App -->
-        <script src="js/app.js" type="text/javascript"></script>
-    </body>
+    <!-- Import Bootstrap 4 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <!-- Import Axios -->
+    <script src="https://npmcdn.com/axios/dist/axios.min.js" type="text/javascript"></script>
+    <!-- Import Pace.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js" type="text/javascript"></script>
+    <!-- Import App -->
+    <script src="js/app.js" type="text/javascript"></script>
+</body>
+
 </html>

@@ -128,7 +128,7 @@
 
                 // Channel logo
                 $logo = $('<img>')
-                    .addClass('img-circle logo pull-xs-left')
+                    .addClass('img-responsive img-circle logo pull-xs-left')
                     .attr({
                         src: data.logo || 'img/logo-default.jpg',
                         alt: channel
@@ -157,7 +157,7 @@
 
                 // Channel latest activity
                 $activity = $('<p>')
-                    .addClass('list-group-item-text')
+                    .addClass('list-group-item-text activity')
                     .text(data.activity);
 
                 // Append $logo, $heading and $activity to $listItem
@@ -184,7 +184,7 @@
                         
                     // Channel image (stream preview or channel default)
                     $preview = $('<img>')
-                        .addClass('img-fluid')
+                        .addClass('img-responsive')
                         .attr({
                             src: data.stream.preview.large,
                             alt: "Stream preview."
