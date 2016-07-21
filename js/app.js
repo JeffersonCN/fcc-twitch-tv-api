@@ -184,7 +184,7 @@
                         
                     // Channel image (stream preview or channel default)
                     $preview = $('<img>')
-                        .addClass('img-responsive')
+                        .addClass('img-responsive preview')
                         .attr({
                             src: data.stream.preview.large,
                             alt: "Stream preview."

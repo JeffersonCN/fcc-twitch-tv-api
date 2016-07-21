@@ -4,23 +4,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+/* ==== FIXED TOP BAR ==== */
+
 .navbar {
     background-color: white;
     margin-bottom: 0px;
     box-shadow: 0px 4px 6px #6441a4;
-}
-
-.list-group {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 20px;
-}
-
-.logo {
-    margin-right: 10px;
-}
-
-.display-name {
-    font-weight: 600;
 }
 
 #brand {
@@ -40,7 +29,34 @@ body {
 }
 
 
-/* Image opacity on hover */
+/* === LIST GROUP === */
+
+.list-group {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5px;
+}
+
+
+/* ==== LIST ITEM ==== */
+
+.logo {
+    margin-right: 10px;
+}
+
+.display-name {
+    font-weight: 600;
+}
+
+.label {
+    font-weight: 300;
+}
+
+.preview {
+    width: 100%;
+}
+
+
+/* PREVIEW IMAGE EFFECT ON HOVER */
 
 .hover img {
     opacity: 1;
@@ -53,159 +69,119 @@ body {
 }
 
 
-/* -------- Responsive ----- */
+/* ====== RESPONSIVITY ====== */
 
-.label {
-    font-weight: 300;
-}
-
-
-/* xs */
-
-@media only screen and (min-device-width: 0px) {
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+    /* smartphones, iPhone, portrait 480x320 phones */
     body {
-        padding-top: 170px;
+        padding-top: 62px;
+    }
+    .container {
+        padding: 0 0 0 0;
     }
     #brand {
-        font-size: 60px;
+        font-size: 1.5em;
     }
     #made-with {
-        font-size: 35px;
+        font-size: 0.8em;
     }
     .logo {
-        max-width: 150px;
-        max-height: 150px;
+        max-width: 3.5em;
+        max-height: 3.5em;
     }
     .display-name {
-        font-size: 40px;
+        font-size: 0.8em;
     }
     .label {
-        font-size: 24px;
+        font-size: 0.8em;
     }
     .activity {
-        font-size: 30px;
-        visibility: visible;
+        font-size: 0.8em;
     }
 }
 
+@media only screen and (min-width: 360px) and (orientation: portrait) {
+    .display-name {
+        font-size: 1em;
+    }
+}
 
-/* sm */
+@media only screen and (min-width: 412px) and (orientation: portrait) {
+    #made-with {
+        font-size: 0.9em;
+    }
+    .logo {
+        max-width: 4em;
+        max-height: 4em;
+    }
+    .display-name {
+        font-size: 1.1em;
+    }
+    .label {
+        font-size: 0.8em;
+    }
+    .activity {
+        font-size: 1em;
+    }
+}
 
-@media only screen and (min-device-width: 544px) {
+@media only screen and (min-width: 768px) and (orientation: portrait) {
     body {
-        padding-top: 125px;
+        padding-top: 74px;
+    }
+    .container {
+        margin: 0 auto;
+        width: 90%;
     }
     #brand {
-        font-size: 50px;
+        font-size: 2em;
     }
     #made-with {
-        font-size: 24px;
-    }
-    .logo {
-        max-width: 100px;
-        max-height: 100px;
+        font-size: 1em;
     }
     .display-name {
-        font-size: 30px;
+        font-size: 1.2em;
     }
     .label {
-        font-size: 22px;
-    }
-    .activity {
-        font-size: 24px;
-        visibility: visible;
+        font-size: 1em;
     }
 }
 
-
-/* md */
-
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 360px) and (orientation: landscape) {
     body {
-        padding-top: 115px;
+        padding-top: 67px;
+    }
+    .container {
+        width: 80%;
+    }
+    .list-group {
+        margin: 1em;
     }
     #brand {
-        font-size: 40px;
+        font-size: 1.6em;
     }
     #made-with {
-        font-size: 18px;
+        font-size: 1em;
     }
     .logo {
-        max-width: 110px;
-        max-height: 110px;
+        max-width: 3em;
+        max-height: 3em;
     }
     .display-name {
-        font-size: 30px;
+        font-size: 1.2em;
     }
     .label {
-        font-size: 22px;
-    }
-    .activity {
-        font-size: 24px;
-        visibility: visible;
+        font-size: 1.1em;
     }
 }
 
-
-/* lg */
-
-@media only screen and (min-device-width: 992px) {
-    body {
-        padding-top: 115px;
-    }
-    #brand {
-        font-size: 40px;
-    }
-    #made-with {
-        font-size: 18px;
-    }
-    .logo {
-        max-width: 110px;
-        max-height: 110px;
-    }
-    .display-name {
-        font-size: 26px;
-    }
-    .label {
-        font-size: 22px;
-    }
-    .activity {
-        font-size: 24px;
-        visibility: visible;
+@media only screen and (min-width: 1200px) and (orientation: landscape) {
+    .container {
+        width: 60%;
     }
 }
 
-
-/* xl */
-
-@media only screen and (min-device-width: 1200px) {
-    body {
-        padding-top: 115px;
-    }
-    #brand {
-        font-size: 40px;
-    }
-    #made-with {
-        font-size: 18px;
-    }
-    .logo {
-        max-width: 110px;
-        max-height: 110px;
-    }
-    .display-name {
-        font-size: 26px;
-    }
-    .label {
-        font-size: 22px;
-    }
-    .activity {
-        font-size: 24px;
-        visibility: visible;
-    }
-}
-
-
-/* ======== PACE ========== */
+/* ======== PACE ========= */
 
 .pace {
     -webkit-pointer-events: none;
