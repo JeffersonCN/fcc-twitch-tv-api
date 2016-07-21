@@ -32,6 +32,7 @@ body {
 #made-with {
     font-weight: 400;
     margin-bottom: 3px;
+    margin-top: 3px;
 }
 
 .fa-heart {
@@ -63,26 +64,26 @@ body {
 
 @media only screen and (min-device-width: 0px) {
     body {
-        padding-top: 125px;
+        padding-top: 170px;
     }
     #brand {
-        font-size: 50px;
+        font-size: 60px;
     }
     #made-with {
-        font-size: 24px;
+        font-size: 35px;
     }
     .logo {
-        max-width: 110px;
-        max-height: 110px;
+        max-width: 150px;
+        max-height: 150px;
     }
     .display-name {
-        font-size: 30px;
+        font-size: 40px;
     }
     .label {
         font-size: 24px;
     }
     .activity {
-        font-size: 18px;
+        font-size: 22px;
         visibility: visible;
     }
 }
