@@ -2,17 +2,17 @@
     // Module for Twitch API service
     var TwitchAPI = {
         getChannelData: function(channel) {
-            return axios.get('https://api.twitch.tv/kraken/channels/' + channel);
+            return axios.get('https://api.twitch.tv/kraken/channels/' + channel + '?client_id=99jhflwsoro9v1386nv8t06swoigv53');
         },
         getChannelStreams: function(channel) {
-            return axios.get('https://api.twitch.tv/kraken/streams/' + channel);
+            return axios.get('https://api.twitch.tv/kraken/streams/' + channel + '?client_id=99jhflwsoro9v1386nv8t06swoigv53');
         }
     };
 
     // Module for Twitch App
     var App = {
         channels: {
-            list: ["brunofin", "dreamhacksc2", "tsm_dyrus", "fuslie", "gamingpowerhouse", "comster404", "OgamingSC2", "freecodecamp", "habathcx", "RobotCaleb"],
+            list: ["chozilla", "pajlada", "dreamhacksc2", "tsm_dyrus", "fuslie", "gamingpowerhouse", "OgamingSC2", "freecodecamp", "habathcx", "RobotCaleb"],
             data: {}
         },
         // Initializes the App state
